@@ -14,7 +14,7 @@ def analyze_solution(solution, drones, deliveries, noflyzones):
     fit = fitness(solution, drones, deliveries, noflyzones)
     print(f"Tamamlanan teslimat: {total_delivered}/{total_deliveries} (%{100*total_delivered/total_deliveries:.1f})")
     print(f"Fitness: {fit}")
-    # Kural ve zaman ihlali sayısı
+    # Kural ve zaman ihlali s
     delivery_map = {d.id: d for d in deliveries}
     drone_map = {d.id: d for d in drones}
     from datetime import datetime, timedelta
